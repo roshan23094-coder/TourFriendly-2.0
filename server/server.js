@@ -2,7 +2,6 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
-import { exec } from "child_process";
 
 // =======================
 // Routes
@@ -57,62 +56,6 @@ app.get("/", (req, res) => {
   res.status(200).json({
     success: true,
     message: "🚀 TourFriendly API Running Successfully",
-  });
-});
-
-// =======================
-// TEMPORARY DATABASE SEED ROUTE
-// =======================
-// IMPORTANT:
-// This route is protected with SEED_KEY.
-// We will remove this route after
-// the production database is seeded.
-// =======================
-
-app.get("/api/seed-database", (req, res) => {
-  const providedKey = req.query.key;
-
-  if (
-    !process.env.SEED_KEY ||
-    providedKey !== process.env.SEED_KEY
-  ) {
-    return res.status(403).json({
-      success: false,
-      message: "Unauthorized",
-    });
-  }
-
-  console.log("=================================");
-  console.log("🌱 Production database seed started");
-  console.log("=================================");
-
-  exec("npm run seed", (error, stdout, stderr) => {
-    if (error) {
-      console.error("❌ Seed process failed");
-      console.error(error);
-
-      return res.status(500).json({
-        success: false,
-        message: "Database seed failed",
-        error: error.message,
-      });
-    }
-
-    if (stderr) {
-      console.error(stderr);
-    }
-
-    console.log(stdout);
-
-    console.log("=================================");
-    console.log("🎉 Production database seeded");
-    console.log("=================================");
-
-    return res.status(200).json({
-      success: true,
-      message: "🎉 Production database seeded successfully",
-      output: stdout,
-    });
   });
 });
 
