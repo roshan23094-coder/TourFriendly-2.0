@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Hassan",
+    "state": "Karnataka",
+    "description": "Hassan is famous for Hoysala architecture, lush hills, coffee plantations, and historic temples.",
+    "image": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1200",
+    "famousFor": [
+      "Belur",
+      "Halebidu",
+      "Sakleshpur",
+      "Manjarabad Fort",
+      "Bisle Ghat"
+    ],
+    "rating": 4.8
+  },
+  {
+    "name": "Mysuru",
+    "state": "Karnataka",
+    "description": "Mysuru is known for Mysore Palace, Dasara Festival, rich heritage, and sandalwood.",
+    "image": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200",
+    "famousFor": [
+      "Mysore Palace",
+      "Chamundi Hills",
+      "Mysore Zoo",
+      "Brindavan Gardens"
+    ],
+    "rating": 4.9
+  },
+  {
+    "name": "Kodagu",
+    "state": "Karnataka",
+    "description": "Kodagu, popularly called Coorg, is famous for coffee estates, waterfalls and hill stations.",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200",
+    "famousFor": [
+      "Abbey Falls",
+      "Raja Seat",
+      "Dubare Elephant Camp",
+      "Coffee Estates"
+    ],
+    "rating": 4.9
+  },
+  {
+    "name": "Bengaluru Urban",
+    "state": "Karnataka",
+    "description": "Bengaluru Urban is India's Silicon Valley, famous for parks, shopping and nightlife.",
+    "image": "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=1200",
+    "famousFor": [
+      "Cubbon Park",
+      "Lalbagh",
+      "Bangalore Palace",
+      "Vidhana Soudha"
+    ],
+    "rating": 4.8
+  },
+  {
+    "name": "Chikkamagaluru",
+    "state": "Karnataka",
+    "description": "Chikkamagaluru is famous for Mullayanagiri Peak, coffee plantations and waterfalls.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200",
+    "famousFor": [
+      "Mullayanagiri",
+      "Baba Budangiri",
+      "Hebbe Falls",
+      "Hirekolale Lake"
+    ],
+    "rating": 4.9
+  }
+]
